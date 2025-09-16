@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kotkantien Maalaus ja Tapetointi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="kuvat/paint-roller.png">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-paint-roller"></i> Kotkantien Maalaus</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Etusivu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="palvelut.html">Palvelut</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galleria.html">Galleria</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="varientestaus.html">Värien testaus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Värien testaus -->
+    <section id="varientestaus" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4"><i class="fa-solid fa-palette"></i> Värien testaus</h2>
+
+            <!-- Pinnat -->
+            <div class="d-flex justify-content-center gap-0 mb-4">
+                <div>
+                    <h5>Pinta 1</h5>
+                    <div id="surface1" class="test-surface mb-2"></div>
+                    <div id="surface1Name" class="fw-bold"></div>
+                </div>
+                <div>
+                    <h5>Pinta 2</h5>
+                    <div id="surface2" class="test-surface mb-2"></div>
+                    <div id="surface2Name" class="fw-bold"></div>
+                </div>
+            </div>
+
+            <!-- Väripaletti -->
+            <div class="palette-bar d-flex flex-wrap justify-content-center my-4">
+                <div class="color-swatch" data-color="#DD4132" title="Fiesta"></div>
+                <div class="color-swatch" data-color="#9E1030" title="Jester Red"></div>
+                <div class="color-swatch" data-color="#FE840E" title="Turmeric"></div>
+                <div class="color-swatch" data-color="#FF6F61" title="Living Coral"></div>
+                <div class="color-swatch" data-color="#C62168" title="Pink Peacock"></div>
+                <div class="color-swatch" data-color="#8D9440" title="Pepper Stem"></div>
+                <div class="color-swatch" data-color="#FFD662" title="Aspen Gold"></div>
+                <div class="color-swatch" data-color="#00539C" title="Princess Blue"></div>
+                <div class="color-swatch" data-color="#755139" title="Toffee"></div>
+                <div class="color-swatch" data-color="#D69C2F" title="Mango Mojito"></div>
+                <div class="color-swatch" data-color="#616247" title="Terrarium Moss"></div>
+                <div class="color-swatch" data-color="#E8B5CE" title="Sweet Lilac"></div>
+                <div class="color-swatch" data-color="#D2C29D" title="Soybean"></div>
+                <div class="color-swatch" data-color="#343148" title="Eclipse"></div>
+                <div class="color-swatch" data-color="#F0EAD6" title="Sweet Corn"></div>
+                <div class="color-swatch" data-color="#61555F" title="Brown Granite"></div>
+
+                <!-- Custom-värivalitsin -->
+                <div class="custom-swatch ms-2">
+                    <input type="color" id="customColor" value="#ffffff">
+                </div>
+            </div>
+
+            <!-- Tyhjennä -->
+            <div class="d-flex justify-content-center">
+                <button id="resetColors" class="btn btn-secondary btn-sm">Tyhjennä värit</button>
+            </div>
+
+            <p class="mt-4">Klikkaa väriä ja valitse pinta, johon haluat värin. Testaa värejä ja löydä sopiva yhdistelmä kotiisi! Voit myös valita oman värin <span class="fw-bold">värivalitsimella</span>!</p>
+        </div>
+    </section><br><br><br><br><br><br><br><br><br><br><br>
+
+    <footer class="bg-primary text-white text-center py-3 mt-5">
+        <span>&copy; 2025 Kotkantien Maalaus ja Tapetointi</span>
+    </footer>
+
+    <!-- Bootstrap ja JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

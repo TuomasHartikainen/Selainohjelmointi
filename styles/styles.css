@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto', 'Ellito Sans', Arial, sans-serif;
+    background: #f8f9fa;
+    font-size: 12px;
+}
+
+.navbar {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+.gallery-img {
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+#gallery .gallery-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.gallery-img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 16px rgba(33,37,41,0.15);
+}
+footer {
+    background: #0d6efd;
+}
+.btn-primary {
+    background: #0d6efd;
+    border: none;
+}
+.btn-primary:hover {
+    background: #0b5ed7;
+}
+
+h1, .display-4 {
+    font-size: 24px !important;
+    font-weight: 700;
+    font-family: 'Roboto', 'Ellito Sans', Arial, sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    font-size: 16px !important;
+    font-weight: 700;
+    font-family: 'Roboto', 'Ellito Sans', Arial, sans-serif;
+}
+
+p, li, .btn, .form-control, label {
+    font-size: 12px !important;
+    font-family: 'Roboto', 'Ellito Sans', Arial, sans-serif;
+}
+
+.palette-bar {
+    gap: 8px;
+}
+.test-surface {
+    width: 400px;
+    height: 160px;
+    background: #fff;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.selected-surface {
+    box-shadow: 0 0 0 3px #0d6efd;
+    border-color: #0d6efd;
+}
+
+.color-swatch {
+    width: 128px;
+    height: 64px;
+    border-radius: 6px;
+    margin: 4px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: border 0.2s;
+}
+.color-swatch:hover {
+    border: 2px solid #0d6efd;
+}
+
+.custom-swatch {
+    width: 128px;
+    height: 64px;
+    border-radius: 6px;
+    margin: 4px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: border 0.2s;
+    overflow: hidden;
+}
+.custom-swatch input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
