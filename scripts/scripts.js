@@ -6,18 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
         this.reset();
     });
 
-    // Galleria
-    $('#gallery').on('click', '.gallery-img', function() {
-        const src = $(this).attr('src');
-        const alt = $(this).attr('alt');
-        $('body').append(`
-            <div id="imgModal" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.7);display:flex;align-items:center;justify-content:center;z-index:9999;">
-                <img src="${src}" alt="${alt}" style="max-width:90vw;max-height:90vh;border-radius:12px;box-shadow:0 4px 32px #000;">
-            </div>
-        `);
-        $('#imgModal').on('click', function() { $(this).remove(); });
-    });
-
     let selectedSurface = null;
 
     // Pinnan valinta
