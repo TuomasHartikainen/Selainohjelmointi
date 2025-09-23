@@ -11,27 +11,33 @@ body {
 section {
     scroll-margin-top: 80px;
 }
+
 .gallery-img {
     transition: transform 0.2s;
     cursor: pointer;
 }
+
 #gallery .gallery-img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
 }
+
 .gallery-img:hover {
     transform: scale(1.08);
     box-shadow: 0 4px 16px rgba(33,37,41,0.15);
 }
+
 footer {
     background: #0d6efd;
 }
+
 .btn-primary {
     background: #0d6efd;
     border: none;
 }
+
 .btn-primary:hover {
     background: #0b5ed7;
 }
@@ -56,6 +62,7 @@ p, li, .btn, .form-control, label {
 .palette-bar {
     gap: 8px;
 }
+
 .test-surface {
     width: 400px;
     height: 160px;
@@ -79,6 +86,7 @@ p, li, .btn, .form-control, label {
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     transition: border 0.2s;
 }
+
 .color-swatch:hover {
     border: 2px solid #0d6efd;
 }
@@ -94,6 +102,7 @@ p, li, .btn, .form-control, label {
     transition: border 0.2s;
     overflow: hidden;
 }
+
 .custom-swatch input {
     width: 100%;
     height: 100%;
