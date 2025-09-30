@@ -64,11 +64,24 @@ p, li, .btn, .form-control, label {
 }
 
 .test-surface {
+  width: 100%;
+  max-width: 400px;
+  height: 160px;
+  background: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+@media (min-width: 768px) {
+  .test-surface {
     width: 400px;
-    height: 160px;
-    background: #fff;
-    cursor: pointer;
-    transition: box-shadow 0.2s;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .test-surface {
+    width: 150px;
+  }
 }
 
 .selected-surface {
